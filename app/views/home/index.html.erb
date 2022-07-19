@@ -26,6 +26,13 @@
             color: deepskyblue;
             font-size: 34px;
         }
+        .hello-page__list > li {
+            font-size: 26px;
+            margin: 0 auto;
+            margin-top: 20px;
+            font-family: "Montserrat";
+            list-style-type: none;
+        }
     </style>
   </head>
   <body>
@@ -34,8 +41,14 @@
           WELCOME TO MY RUBY APPLICATION FOR OBLAKO GROUP COMPANY
         </h1>
         <h2>
-          To test it, please go here: <a href="/projects">HERE :)</a>
+          API queries are listed below:
         </h2>
+        <ul class="hello-page__list">
+          <li>GET /projects — вернуть все проекты с задачами;</li>
+          <li>POST /todos — создать новую задачу;</li>
+          <li>POST /projects - создать новый проект</li>
+          <li>PATCH /projects/id/todo/id — обновить задачу.</li>
+        </ul>
     </div>
   </body>
 </html>
