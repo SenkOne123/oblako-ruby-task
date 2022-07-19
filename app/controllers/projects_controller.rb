@@ -11,7 +11,7 @@ class ProjectsController < ApplicationController
       title: params[:title]
     )
     Project.last.todos.create(
-      text: params[:todos][:text]
+      text: params[:text]
     )
   end
 
