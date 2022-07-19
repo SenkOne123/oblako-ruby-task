@@ -10,9 +10,7 @@ class TodosController < ApplicationController
   def update
     @todo = Project.find(params[:project_id]).todos.find(params[:todo_id])
     @todo.update(
-      text: params[:text],
-      isCompleted: params[:isCompleted],
-      project_id: params[:project_id]
+      isCompleted: params[:isCompleted]
     )
   end
 end
