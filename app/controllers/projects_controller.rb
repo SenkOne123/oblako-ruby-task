@@ -10,6 +10,9 @@ class ProjectsController < ApplicationController
     Project.create(
       title: params[:title]
     )
+    Project.last.todos.create(
+      text: params[:todos][:text]
+    )
   end
 
 end
